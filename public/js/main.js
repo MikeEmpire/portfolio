@@ -1,25 +1,17 @@
 $(document).ready(function() {
 
-	setTimeout(function(){
+	setTimeout(function() {
 		$('body').addClass('loaded');
-		$('h1').css('color','#222222');
-	}, 3000);
-
-	$(function() {
-		$('ul.nav a').bind('click', function(event) {
-			var $anchor = $(this);
-
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1500, 'easeInOutExpo');
-			/*
-	    if you don't want to use the easing effects:
-	    $('html, body').stop().animate({
-	        scrollTop: $($anchor.attr('href')).offset().top
-	    }, 1000);
-	    */
-			event.preventDefault();
-		});
+		$('h1').css('color', '#FFF');
 	});
-
+	// 	var mySplitText = new SplitText("#quote", {type: "lines"}),
+	// 		tl = new TimelineLite();
+	//
+	// 	tl.staggerFrom(mySplitText.lines, 1.6, {
+	// 		opacity: 0,
+	// 		cycle: {
+	// 			x: [100, -100]
+	// 		}
+	// 	}, 2.5)
+	// }, 1000);
 });

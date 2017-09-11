@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|Montserrat:100,400|Space+Mono');
+ /* --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+
 *{
     margin:0;
     padding:0;
 }
+h1 {
+    color: #EEEEEE;
+}
+
 body{
     background:#000;
     font-family:Georgia;
@@ -9,59 +21,166 @@ body{
     font-style: italic;
     letter-spacing:-1px;
 }
+
+ul.contactInfo {
+	display: inline-block;
+	list-style: none;
+	font-size: 3vw;
+	margin-bottom: 60%;
+	margin-top: 2%;
+	font-style: initial;
+}
+
+span.reference ul.nav {
+  bottom: 40%;
+  font-family: 'Space Mono', monospace;
+  font-size: large;
+  position: fixed;
+  right: 0;
+}
+
+a.typewrite {
+    font-size: 5vw;
+    font-family: 'Space Mono', monospace;
+    color: white;
+    text-shadow: none;
+}
 .section{
     margin:0px;
-    height:4000px;
-    width:100%;
+    height: 100vh;
+    width: 100vw;
     float:left;
     text-shadow:1px 1px 2px #f0f0f0;
 }
+
 .section h2{
-    margin:50px 0px 30px 50px;
+    font-style: initial;
+    font-weight: 100;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 0px 30px 0px;
 }
+
 .section p{
-    margin:20px 0px 0px 50px;
-    width: 90vw;
+    margin: 0px 0px 0px 0px;
+    width: 70vw;
+    font-size: large;
 }
+
 .black{
     color:#fff;
-    background:#000 url(../images/black_vert.jpg) repeat-x bottom left;
+    background:#000;
+}
+h4.contact {
+	text-shadow: none;
+	font-style: initial;
+	position: absolute;
+	font-family: 'Space Mono', monospace;
+	font-size: 3vw;
+	margin-top: 8%;
 }
 .white{
     color:#000;
-    background:#fff url(../images/white_vert.jpg) repeat-x bottom left;
+    background:#fff;
 }
 
-.section ul{
-    display: inline;
-    list-style: none;
-    margin: 8px 0px 0px 550px;
-}
-.black ul li{
-    float:left;
-    padding:5px;
-    margin:5px;
-    color:#aaa;
-}
 .black ul li a{
     display:block;
     color:#f0f0f0;
 }
+
 .black ul li a:hover{
     text-decoration:none;
     color:#fff;
 }
+
 .white ul li{
     float:left;
     padding:5px;
     margin:5px;
     color:#aaa;
 }
+
 .white ul li a{
     display:block;
     color:#222;
 }
+
 .white ul li a:hover{
     text-decoration:none;
     color:#000;
+}
+
+.menu {
+	position: fixed;
+  z-index: 10;
+  bottom: 40%;
+}
+
+.menu__item {
+	line-height: 1;
+	position: relative;
+	display: block;
+	margin: 1em 0;
+	outline: none;
+}
+
+.menu__item-name,
+.menu__item-label {
+	position: relative;
+	display: inline-block;
+}
+
+.menu__item-name {
+	font-size: 1.25em;
+}
+
+.menu--tsula {
+	font-family: 'Space Mono', monospace;
+}
+
+.menu--tsula .menu__item {
+	padding-left: 0.25em;
+}
+
+.menu--tsula .menu__item-name {
+	font-size: 4vw;
+	text-transform: uppercase;
+	color: #5a5bd3;
+}
+
+.menu--tsula .menu__item:hover .menu__item-name,
+.menu--tsula .menu__item:focus .menu__item-name {
+	color: #222328;
+	background: #5a5bd3;
+}
+
+.menu--tsula .menu__item::before {
+	content: '';
+	position: absolute;
+	top: 30%;
+	right: 100%;
+	width: 5vw;
+	height: 3vh;
+	opacity: 0;
+	background: rgba(90,91,211,0.3);
+	animation: none; /* For Chrome */
+}
+
+.menu--tsula .menu__item-label {
+	margin: 0;
+	color: #999caa;
+}
+
+.menu--tsula .menu__item:hover::before,
+.menu--tsula .menu__item:focus::before {
+	animation: blinkblink 0.4s cubic-bezier(0.5,0,1,1) infinite alternate;
+}
+
+@keyframes blinkblink {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
