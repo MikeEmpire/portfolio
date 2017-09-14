@@ -1,34 +1,38 @@
 <body>
 	<section id="header" class="appear"></section>
 	<div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<div class="container-fluid">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="fa fa-bars color-white"></span>
 					</button>
-				<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">Michael Olie
+					<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">Michael Olie
 					</a></h1>
+				</div>
+				<nav class="shift">
+					<div class="navbar-collapse collapse">
+						<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+							<li class="active"><a href="#section-featured">Home</a></li>
+							<li><a href="#section-about">Work</a></li>
+							<li><a href="#section-works">About</a></li>
+							<li><a href="#section-contact">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!--/.navbar-collapse -->
 			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
-					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="#section-about">Work</a></li>
-					<li><a href="#section-works">About</a></li>
-					<li><a href="#section-contact">Contact</a></li>
-				</ul>
-			</div>
-			<!--/.navbar-collapse -->
 		</div>
 	</div>
 
-	<section class="featured col-md-12 col-sm-12 col-xs-12">
+	<section id="section-featured" class="featured col-md-12 col-sm-12 col-xs-12">
 		<div class="container">
 			<div class="row mar-bot40">
 				<div class="col-md-6 col-md-offset-3">
 
-					<div class="align-center">
-						<h1 style="font-size: smaller;">
-					  	<a class="typewrite" data-period="2000" data-type='[ "Hello, I Am Michael Olie", "I am a developer", "Chill Guy", "Check out the site", "Let me know how you feel about it." ]'>
+					<div>
+						<h1 class="autotext">
+					  	<a class="typewrite" data-period="2000" data-type='[ "Hello, I am Michael Olie", "I am a developer", "Chill Guy", "Check out the site", "Let me know how you feel about it." ]'>
 					    	<span class="wrap"></span>
 					  	</a>
 						</h1>
@@ -38,116 +42,51 @@
 		</div>
 	</section>
 
-	<!-- services -->
-	<section id="section-services" class="section pad-bot30 bg-white">
-		<div class="container">
-
-			<div class="row mar-bot40">
-				<div class="col-lg-4">
-					<div class="align-center">
-						<i class="fa fa-code fa-5x mar-bot20"></i>
-						<h4 class="text-bold">Valid HTML5</h4>
-						<p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. Mei cu dicat voluptaria volumus.
-						</p>
-					</div>
-				</div>
-
-				<div class="col-lg-4">
-					<div class="align-center">
-						<i class="fa fa-terminal fa-5x mar-bot20"></i>
-						<h4 class="text-bold">Responsive</h4>
-						<p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. Mei cu dicat voluptaria volumus.
-						</p>
-					</div>
-				</div>
-
-				<div class="col-lg-4">
-					<div class="align-center">
-						<i class="fa fa-bolt fa-5x mar-bot20"></i>
-						<h4 class="text-bold">Customizable</h4>
-						<p>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. Mei cu dicat voluptaria volumus.
-						</p>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-	</section>
-
 	<!-- spacer section:testimonial -->
-	<section id="testimonials" class="section" data-stellar-background-ratio="0.5">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="align-center">
-						<div class="testimonial pad-top40 pad-bot40 clearfix">
-							<h5>
-        								Nunc velit risus, dapibus non interdum quis, suscipit nec dolor. Vivamus tempor tempus mauris vitae fermentum. In vitae nulla lacus. Sed sagittis tortor vel arcu sollicitudin nec tincidunt metus suscipit.Nunc velit risus, dapibus non interdum.
-        							</h5>
-							<br/>
-							<span class="author">&mdash; MIKE DOE <a href="#">www.siteurl.com</a></span>
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
 
 	<!-- about -->
 	<section id="section-about" class="section appear clearfix">
-		<div class="container">
+		<div class="container" id="work">
 
 			<div class="row mar-bot40">
-				<div class="col-md-offset-3 col-md-6">
+				<div class="col-md-offset-3 col-lg-6 col-md-6">
 					<div class="section-header">
-						<h2 class="section-heading animated" data-animation="bounceInUp">Our Team</h2>
-						<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam.</p>
+						<h2 class="section-heading animated" data-animation="bounceInUp">Work</h2>
+
 					</div>
 				</div>
 			</div>
 
 			<div class="row align-center mar-bot40">
-				<div class="col-md-3">
-					<div class="team-member">
-						<figure class="member-photo"><img src="img/team/member1.jpg" alt="" /></figure>
-						<div class="team-detail">
-							<h4>Jason Doe</h4>
-							<span>User experiences</span>
-						</div>
-					</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h1>Rombu</h1>
+					<h5>Production Company</h5>
 				</div>
-				<div class="col-md-3">
-					<div class="team-member">
-						<figure class="member-photo"><img src="img/team/member2.jpg" alt="" /></figure>
-						<div class="team-detail">
-							<h4>Timothy Clark</h4>
-							<span>Web developer</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="team-member">
-						<figure class="member-photo"><img src="img/team/member3.jpg" alt="" /></figure>
-						<div class="team-detail">
-							<h4>Vicky Tan</h4>
-							<span>Web designer</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="team-member">
-						<figure class="member-photo"><img src="img/team/member4.jpg" alt="" /></figure>
-						<div class="team-detail">
-							<h4>Kevin Peterson</h4>
-							<span>UI designer</span>
-						</div>
-					</div>
+				<div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<p class="work-info">Lorem Khaled Ipsum is a major key to success. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. We don’t see them, we will never see them. A major key, never panic. Don’t panic, when it gets crazy and rough,
+						don’t panic, stay calm. You smart, you loyal, you a genius. Celebrate success right, the only way, apple. Special cloth alert. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail.</p>
 				</div>
 			</div>
-
+			<div class="row align-center mar-bot40">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h1>Rombu</h1>
+					<h5>Production Company</h5>
+				</div>
+				<div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<p class="work-info">Lorem Khaled Ipsum is a major key to success. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. We don’t see them, we will never see them. A major key, never panic. Don’t panic, when it gets crazy and rough,
+						don’t panic, stay calm. You smart, you loyal, you a genius. Celebrate success right, the only way, apple. Special cloth alert. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail.</p>
+				</div>
+			</div>
+			<div class="row align-center mar-bot40">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h1>Rombu</h1>
+					<h5>Production Company</h5>
+				</div>
+				<div class="col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<p class="work-info">Lorem Khaled Ipsum is a major key to success. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. We don’t see them, we will never see them. A major key, never panic. Don’t panic, when it gets crazy and rough,
+						don’t panic, stay calm. You smart, you loyal, you a genius. Celebrate success right, the only way, apple. Special cloth alert. Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- /about -->
@@ -165,145 +104,14 @@
 	<!-- section works -->
 	<section id="section-works" class="section appear clearfix">
 		<div class="container">
-
 			<div class="row mar-bot40">
 				<div class="col-md-offset-3 col-md-6">
 					<div class="section-header">
-						<h2 class="section-heading animated" data-animation="bounceInUp">Portfolio</h2>
-						<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam.</p>
+						<h2 class="section-heading animated" data-animation="bounceInUp">Who is Michael Olie</h2>
+						<p>I am a dedicated web developer who graduated from Loyola University with a major in Business Marketing in 2011. A web developer with a real passion for creating new technologies and learning new techniques. I enjoy what I do, and I also have a background in graphic design. I also enjoy basketball, anime, video games, football, collecting sneakers, and skateboarding</p>
 					</div>
 				</div>
 			</div>
-
-			<div class="row">
-				<nav id="filter" class="col-md-12 text-center">
-					<ul>
-						<li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-						<li><a href="#" class="btn-theme btn-small" data-filter=".webdesign">Web Design</a></li>
-						<li><a href="#" class="btn-theme btn-small" data-filter=".photography">Photography</a></li>
-						<li><a href="#" class="btn-theme btn-small" data-filter=".print">Print</a></li>
-					</ul>
-				</nav>
-				<div class="col-md-12">
-					<div class="row">
-						<div class="portfolio-items isotopeWrapper clearfix" id="3">
-
-							<article class="col-md-4 isotopeItem webdesign">
-								<div class="portfolio-item">
-									<img src="img/portfolio/img1.jpg" alt="" />
-									<div class="portfolio-desc align-center">
-										<div class="folio-info">
-											<h5><a href="#">Portfolio name</a></h5>
-											<a href="img/portfolio/img1.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-										</div>
-									</div>
-								</div>
-							</article>
-
-							<article class="col-md-4 isotopeItem photography">
-								<div class="portfolio-item">
-									<img src="img/portfolio/img2.jpg" alt="" />
-									<div class="portfolio-desc align-center">
-										<div class="folio-info">
-											<h5><a href="#">Portfolio name</a></h5>
-											<a href="img/portfolio/img2.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-										</div>
-									</div>
-								</div>
-							</article>
-
-
-							<article class="col-md-4 isotopeItem photography">
-								<div class="portfolio-item">
-									<img src="img/portfolio/img3.jpg" alt="" />
-									<div class="portfolio-desc align-center">
-										<div class="folio-info">
-											<h5><a href="#">Portfolio name</a></h5>
-											<a href="img/portfolio/img3.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-										</div>
-									</div>
-								</div>
-							</article>
-
-							<article class="col-md-4 isotopeItem print">
-								<div class="portfolio-item">
-									<img src="img/portfolio/img4.jpg" alt="" />
-									<div class="portfolio-desc align-center">
-										<div class="folio-info">
-											<h5><a href="#">Portfolio name</a></h5>
-											<a href="img/portfolio/img4.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-										</div>
-									</div>
-								</div>
-							</article>
-
-							<article class="col-md-4 isotopeItem photography">
-								<div class="portfolio-item">
-									<img src="img/portfolio/img5.jpg" alt="" />
-									<div class="portfolio-desc align-center">
-										<div class="folio-info">
-											<h5><a href="#">Portfolio name</a></h5>
-											<a href="img/portfolio/img5.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-										</div>
-									</div>
-								</div>
-							</article>
-
-							<article class="col-md-4 isotopeItem webdesign">
-								<div class="portfolio-item">
-									<img src="img/portfolio/img6.jpg" alt="" />
-									<div class="portfolio-desc align-center">
-										<div class="folio-info">
-											<h5><a href="#">Portfolio name</a></h5>
-											<a href="img/portfolio/img6.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-										</div>
-									</div>
-								</div>
-							</article>
-
-							<article class="col-md-4 isotopeItem print">
-								<div class="portfolio-item">
-									<img src="img/portfolio/img7.jpg" alt="" />
-									<div class="portfolio-desc align-center">
-										<div class="folio-info">
-											<h5><a href="#">Portfolio name</a></h5>
-											<a href="img/portfolio/img7.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-										</div>
-									</div>
-								</div>
-							</article>
-
-							<article class="col-md-4 isotopeItem photography">
-								<div class="portfolio-item">
-									<img src="img/portfolio/img8.jpg" alt="" />
-									<div class="portfolio-desc align-center">
-										<div class="folio-info">
-											<h5><a href="#">Portfolio name</a></h5>
-											<a href="img/portfolio/img8.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-										</div>
-									</div>
-								</div>
-							</article>
-
-							<article class="col-md-4 isotopeItem print">
-								<div class="portfolio-item">
-									<img src="img/portfolio/img9.jpg" alt="" />
-									<div class="portfolio-desc align-center">
-										<div class="folio-info">
-											<h5><a href="#">Portfolio name</a></h5>
-											<a href="img/portfolio/img9.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
-										</div>
-									</div>
-								</div>
-							</article>
-						</div>
-
-					</div>
-
-
-				</div>
-			</div>
-
 		</div>
 	</section>
 	<section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">
@@ -363,10 +171,6 @@
 			</div>
 
 		</div>
-	</section>
-	<!-- map -->
-	<section id="section-map" class="clearfix">
-		<div id="google-map" data-latitude="40.713732" data-longitude="-74.0092704"></div>
 	</section>
 
 	<section id="footer" class="section footer">

@@ -1,58 +1,90 @@
 /*// Small screens*/
 @media only screen {
   /* Define mobile styles */
+	html {
+		width: 130%;
+	}
+	h1.autotext {
+		margin-top: 10%;
+	}
+	p.work-info {
+		font-size: 2.7vw;
+    line-height: 14px;
+	}
 
 }
 
 @media only screen and (max-width: 40em) {
+		html {
+			width: 130%;
+	}
+	h1.autotext {
+		margin-top: 10%;
+    font-size: 7vw;
+    width: 130vw;
+	}
 
-   } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+	div#work {
+		width: 130vw;
+		height: 100%;
+	}
+
+	p.work-info {
+		font-size: 2.7vw;
+    line-height: 14px;
+	}
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /*// Medium screens*/
 @media only screen and (min-width: 40.063em) {
-
-   } /* min-width 641px, medium screens */
+	html {
+		width: 100%;
+	}
+	div#work {
+		background: black;
+	}
+} /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-   ul.contactInfo {
-    font-size: 1.9vw;
-		margin-bottom: 20%;
-   }
-	ul#rightSide {
-    margin-left:10%
-   }
+	p.work-info {
+		line-height: 30px;
+	}
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 /**/
 /*// Large screens*/
 @media only screen and (min-width: 64.063em) {
-   ul.contactInfo {
-      font-size: 1.9vw;
-   }
+	p.work-info {
+		line-height: 30px;
+	}
 } /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
-   ul.contactInfo {
-      font-size: 1.9vw;
-   }
+	p.work-info {
+		line-height: 40px;
+    font-size: 1.5vw;
+	}
 } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 /*// XLarge screens*/
 @media only screen and (min-width: 90.063em) {
-   ul.contactInfo {
-      font-size: 1.9vw;
-   }
+	p.work-info {
+		line-height: 40px;
+    font-size: 1.5vw;
+	}
 } /* min-width 1441px, xlarge screens */
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
-   ul.contactInfo {
-      font-size: 1.9vw;
-   }
+	p.work-info {
+		line-height: 40px;
+    font-size: 1.5vw;
+	}
 } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
 /*// XXLarge screens*/
 @media only screen and (min-width: 120.063em) {
-   ul.contactInfo {
-      font-size: 1.9vw;
-   }
-
+	p.work-info {
+		line-height: 40px;
+    font-size: 1.5vw;
+	}
 } /* min-width 1921px, xxlarge screens */
