@@ -104,7 +104,7 @@
 		isMobile = true;
 	}
 
-	if (isMobile == false && ($('#parallax1').length || isMobile == false && $('#parallax2').length || isMobile == false && $('#testimonials').length)) {
+	if (isMobile == false && ($('#parallax1').length || isMobile == false && $('#parallax2').length || isMobile == false && $('#testimonials').length || isMobile == false && $('#section-works').length)) {
 
 		$(window).stellar({
 			responsive: true,
