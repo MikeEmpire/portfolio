@@ -26,9 +26,9 @@ $(function() {
 	var scene = new ScrollMagic.Scene({
 		triggerElement: '#section-works',
 		duration: 200,
-		offset: 150
+		offset: 50
 		})
 		.setTween(tween)
-		.addIndicators({name: "loop"})
+		// .addIndicators({name: "loop"})
 		.addTo(scrollMagicController);
 });

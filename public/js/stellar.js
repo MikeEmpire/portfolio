@@ -1,7 +1,8 @@
+/* eslint-disable */
 /*!
  * Stellar.js v0.6.2
  * http://markdalgleish.com/projects/stellar.js
- * 
+ *
  * Copyright 2013, Mark Dalgleish
  * This content is released under the MIT license
  * http://markdalgleish.mit-license.org
@@ -412,7 +413,7 @@
 
 				offsetLeft = $this.offset().left - marginLeft - scrollLeft;
 				offsetTop = $this.offset().top - marginTop - scrollTop;
-				
+
 				// Calculate the offset parent
 				$this.parents().each(function() {
 					var $this = $(this);
@@ -610,7 +611,7 @@
 					ticking = true;
 				}
 			};
-			
+
 			this.$scrollElement.bind('scroll.' + this.name, requestTick);
 			requestTick();
 		},
