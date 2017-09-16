@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "nsp check",
-    "start": "babel-watch app.js",
+    "prestart": "npm install",
+    "start": "babel-node app.js",
     "lint": "./node_modules/.bin/eslint app.js"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "charming": "^2.0.1",
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
+    "foreman": "2.0.0",
     "gsap": "^1.20.2",
     "nodemailer": "^4.1.0",
     "scrollmagic": "^2.0.5",
@@ -40,5 +41,8 @@
     "mocha": "^3.5.0",
     "npm-run-all": "^4.1.1",
     "open": "0.0.5"
+  },
+  "engines": {
+    "node": "6.10.1"
   }
 }

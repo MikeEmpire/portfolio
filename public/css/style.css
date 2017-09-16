@@ -40,11 +40,11 @@ h1,h2,h3,h4,h5,h6 {
 	font-style: normal;
 	margin: 0 0 20px 0;
 }
-h1 { font-size: 40px; line-height: 30px; }
+h1 { font-size: 5vh; line-height: 30px; }
 h2 { font-size: 32px; }
 h3 { font-size: 24px; }
 h4 { font-size: 18px; }
-h5 { font-size: 16px; }
+h5 {font-size: 16px;font-family: 'Space Mono', sans-serif;color: white;}
 .txt-light { font-weight: 300; }
 .txt-regular { font-weight: 400; }
 .txt-bold { font-weight: 700; }
@@ -1177,9 +1177,10 @@ p {
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 }
-
 p.work-info {
 	line-height: 24px;
+	font-family: 'Space Mono', sans-serif;
+	text-align: initial;
 }
 section#section-works {
 	  background-image: url(../img/afam/aboutpagebg.jpg);
@@ -1197,4 +1198,64 @@ p#bio {
 }
 .social-network a.icoGitHub:hover {
     background: black;
+}
+
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+#section06 a {
+  padding-top: 70px;
+}
+#section06 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  -webkit-animation: sdb06 1.5s infinite;
+  animation: sdb06 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb06 {
+  0% {
+    -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb06 {
+  0% {
+    transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
 }
