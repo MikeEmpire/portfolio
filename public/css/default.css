@@ -1,21 +1,21 @@
 /*
-#1 = 35A49C
-#2 = 79CDC0
+#1 = 8330ff
+#2 = 5c1eb9
 */
 a {
-	color: #35A49C;
+	color: #8330ff;
 }
 a:hover {
-	color: #79CDC0;
+	color: #5c1eb9;
 }
 
 /* menu */
 .nav>li>a:hover {
-	color: #79CDC0;
+	color: #5c1eb9;
 }
 
 .navbar .navbar-nav > .active > a {
-	color: #79CDC0;
+	color: #8330ff;
 }
 
 /* flexslider */
@@ -49,18 +49,18 @@ a:hover {
 
 /* btn */
 .btn-theme {
-  background: #79CDC0;
+  background: #5c1eb9;
 }
 .btn-theme:hover,.btn-theme:focus,.btn-theme:active{
-  background: #35A49C;
+  background: #8330ff;
 }
 .btn-cta,.btn-cta.btn-lg {
-  background: #35A49C;
-  border-color: #79CDC0;
+  background: #5c1eb9;
+  border-color: #8330ff;
 }
 
 .btn-cta:focus,.btn-cta:active{
-   border-color: #35A49C;
+   border-color: #5c1eb9;
 }
 
 /* contact */
@@ -70,11 +70,11 @@ a:hover {
 
 /* footer */
 .social-circle li a {
-	background:#35A49C;
+	background:#5c1eb9;
 }
 
 a.scrollup{
-	background:#35A49C;
+	background:#5c1eb9;
 }
 
 #sendmessage {

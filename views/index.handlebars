@@ -25,14 +25,14 @@
 		</div>
 	</div>
 
-	<section id="section-featured" class="featured col-md-12 col-sm-12 col-xs-12 appear">
+	<section id="section-featured" class="appear featured col-md-12 col-sm-12 col-xs-12">
 		<div class="container">
 			<div class="row mar-bot40">
 				<div class="col-md-6 col-md-offset-3">
 
 					<div>
 						<h1 class="autotext">
-					  	<a class="typewrite" data-period="2000" data-type='[ "Hello, I am Michael Olie", "I am a developer", "Chill Guy", "Check out the site", "Let me know how you feel about it." ]'>
+					  	<a class="typewrite" data-period="2000" data-type='[ "Hello, I am Michael Olie.", "I am a web developer.", "Chill Guy.", "Check out the site...", "Let me know how you feel about it :)" ]'>
 					    	<span class="wrap"></span>
 					  	</a>
 						</h1>
@@ -41,9 +41,15 @@
 			</div>
 		</div>
 	</section>
-
-	<!-- spacer section:testimonial -->
-
+	<!-- spacer section:stats -->
+	<section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="align-center pad-top40 pad-bot40">
+				<blockquote class="bigquote color-white">Talk is cheap. Show me the code.</blockquote>
+				<p class="color-white">Linus Torvalds</p>
+			</div>
+		</div>
+	</section>
 	<!-- about -->
 	<section class="section clearfix">
 		<div id="section-about" class="container appear" id="work">
@@ -91,24 +97,15 @@
 	</section>
 	<!-- /about -->
 
-	<!-- spacer section:stats -->
-	<section id="parallax1" class="section pad-top40 pad-bot40" data-stellar-background-ratio="0.5">
-		<div class="container">
-			<div class="align-center pad-top40 pad-bot40">
-				<blockquote class="bigquote color-white">Talk is cheap. Show me the code.</blockquote>
-				<p class="color-white">Linus Torvalds</p>
-			</div>
-		</div>
-	</section>
-
 	<!-- section works -->
 	<section id="section-works" class="section appear clearfix" data-stellar-background-ratio="0.6">
 		<div class="container">
 			<div class="row mar-bot40">
-				<div class="col-md-offset-3 col-md-6 col-sm-9 col-xs-9">
+				<div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-9">
 					<div class="section-header">
 						<h2 class="section-heading animated" data-animation="bounceInUp">Who is Michael Olie</h2>
-						<p id="bio">I am a dedicated web developer who graduated from Loyola University with a major in Business Marketing in 2011. A web developer with a real passion for creating new technologies and learning new techniques. I enjoy what I do, and I also have a background in graphic design. I also enjoy basketball, anime, video games, football, collecting sneakers, and skateboarding</p>
+						<p id="bio">I am a dedicated web developer who graduated from Loyola University with a major in Business Marketing in 2011. An unique individual with a real passion for creating all types of applications using new technologies and learning new techniques. I
+							enjoy what I do, and I also have a background in graphic design. I also enjoy basketball, anime, video games, football, collecting sneakers, along with skateboarding</p>
 					</div>
 				</div>
 			</div>
@@ -119,7 +116,7 @@
 		<div class="container">
 
 			<div class="row mar-bot40">
-				<div class="col-md-offset-3 col-md-6">
+				<div class="col-md-offset-3 col-md-6 col-sm-12 col-xs-9">
 					<div class="section-header">
 						<h2 class="section-heading animated" data-animation="bounceInUp">Hit Me Up</h2>
 						<p>I don't bite, just fill out this form and I will get back to you ASAP :)</p>
@@ -128,17 +125,17 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-					<h3>email:</h3><p>aolie94@gmail.com</p>
-					<h3>git:</h3><p>www.github.com/SwiftMike</p>
-					<a href="#"><h4>Click here to see my resume</h4></a>
+					<h3>email:</h3>
+					<p>aolie94@gmail.com</p>
+					<h3>git:</h3>
+					<p>www.github.com/SwiftMike</p>
+					<a target="_blank"  href="https://files.acrobat.com/a/preview/e1fdfaf5-c145-402e-bd72-4c1bf9a094ec"><h4>Click here to see my resume</h4></a>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="cform" id="contact-form">
-						<div id="sendmessage">
-							Your message has been sent. Thank you!
-						</div>
 						<div id="errormessage"></div>
-						<form action="" method="post" role="form" class="contactForm">
+						<form action="/send" method="POST" role="form" class="contactForm">
+							<h1>{{ msg }}</h1>
 							<div class="form-group">
 								<label for="name">Your Name</label>
 								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -156,11 +153,11 @@
 							</div>
 							<div class="form-group">
 								<label for="message">Message</label>
-								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+								<textarea class="form-control" name="message" rows="5" data-rule="required" id="message" data-msg="Please write something for us"></textarea>
 								<div class="validation"></div>
 							</div>
 
-							<button type="submit" class="btn btn-theme pull-left">SEND MESSAGE</button>
+							<button id="submit" type="submit" class="btn btn-theme pull-left">SEND MESSAGE</button>
 						</form>
 
 					</div>
@@ -176,26 +173,17 @@
 			<div class="row animated opacity mar-bot20" data-andown="fadeIn" data-animation="animation">
 				<div class="col-sm-12 align-center">
 					<ul class="social-network social-circle">
-						<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
-						<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="www.facebook.com/michaelolie" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="#" class="icoGitHub" title="GitHub"><i class="fa fa-github"></i></a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="row align-center copyright">
 				<div class="col-sm-12">
-					<p>Copyright &copy; Amoeba</p>
+					<p style="font-family: 'Space Mono', sans-serif;">Michael Olie</p>
 					<div class="credits">
-						<!--
-                                All the links in the footer should remain intact.
-                                You can delete the links only if you purchased the pro version.
-                                Licensing information: https://bootstrapmade.com/license/
-                                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Amoeba
-                            -->
-						<a href="https://bootstrapmade.com/">Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
 					</div>
 				</div>
 			</div>

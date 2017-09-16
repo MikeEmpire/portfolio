@@ -950,7 +950,7 @@ div.cform-response-output {
  ================= */
 
 section#footer {
-	background: #242424;
+	background: #0e0e0e;
 	margin: 0;
 }
 
@@ -1010,13 +1010,13 @@ a.scrollup:hover{
 	background-color: #F56505;
 }
 .social-network a.icoFacebook:hover {
-	background-color:#3B5998;
+	background-color: black;
 }
 .social-network a.icoTwitter:hover {
 	background-color:#33ccff;
 }
 .social-network a.icoGoogle:hover {
-	background-color:#BD3518;
+	background-color: black;
 }
 .social-network a.icoVimeo:hover {
 	background-color:#0590B8;
@@ -1166,9 +1166,16 @@ div#work {
 	height: 100%;
 	width: 100vw;
 }
-
+h1.autotext {
+	line-height: 45px;
+}
+h3, h4 {
+	color: grey;
+	font-family: 'Space Mono', sans-serif;
+}
 p {
 	font-family: 'Montserrat', sans-serif;
+	color: white;
 }
 
 p.work-info {
@@ -1183,5 +1190,11 @@ section#section-works {
 }
 
 p#bio {
+	line-height: 30px;
 	opacity: 0;
+	letter-spacing: 1px;
+	padding-top: 10%;
+}
+.social-network a.icoGitHub:hover {
+    background: black;
 }

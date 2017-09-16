@@ -18,6 +18,7 @@
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
     "gsap": "^1.20.2",
+    "nodemailer": "^4.1.0",
     "scrollmagic": "^2.0.5",
     "whatwg-fetch": "1.0.0"
   },
