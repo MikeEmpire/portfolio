@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 const app = express();
 
 // Declare which port
-const port = 3000;
+const PORT = 3000;
 
 app.use(express.static(`${process.cwd()}/public`));
 
@@ -20,6 +20,8 @@ const data = {
   name: 'Michael Olie',
   age: '23',
 };
+
+app.set('port', (process.env.PORT || 3000));
 
 app.engine('handlebars', handlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
@@ -77,4 +79,4 @@ app.post('/send', (req, res) => {
   });
 });
 
-app.listen(port);
+app.listen(process.env.PORT || PORT);
