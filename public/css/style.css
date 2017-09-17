@@ -5,8 +5,6 @@
     Author URL: https://bootstrapmade.com
 */
 
-/* ==== Google font ==== */
-@import url('https://fonts.googleapis.com/css?family=Lato:400,300,700,900');
 /* === fontawesome === */
 @import url('font-awesome.css');
 /* ==== overwrite bootstrap standard ==== */
@@ -1193,7 +1191,9 @@ section#section-works {
 p#bio {
 	line-height: 30px;
 	opacity: 0;
-	letter-spacing: 1px;
+	color: #2c2c2c;
+  letter-spacing: .05em;
+  text-shadow: 2px 2px 0px #000, 7px 7px 0px rgba(0, 0, 0, 0.2);
 	padding-top: 10%;
 }
 .social-network a.icoGitHub:hover {
@@ -1258,4 +1258,12 @@ p#bio {
     transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
     opacity: 0;
   }
+}
+
+span#contact-text {
+    line-height: 6;
+}
+
+i.form-control-feedback {
+    top: 15px;
 }

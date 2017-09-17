@@ -7,7 +7,7 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="fa fa-bars color-white"></span>
 					</button>
-					<h1><a class="navbar-brand" href="index.html" data-0="line-height:90px;" data-300="line-height:50px;">Michael Olie
+					<h1><a class="navbar-brand" href="#" data-0="line-height:90px;" data-300="line-height:50px;">Michael Olie
 					</a></h1>
 				</div>
 				<nav class="shift">
@@ -32,7 +32,7 @@
 
 					<div>
 						<h1 class="autotext">
-					  	<a class="typewrite" data-period="2000" data-type='[ "Hello, I am Michael Olie.", "I am a web developer.", "Chill Guy.", "Check out the site...", "Let me know how you feel about it :)" ]'>
+					  	<a class="typewrite" data-period="2000" data-type='[ "Michael Olie (preferably Mike).", "Mike codes here and there...", "You can catch him on a court.", "More likely on a computer though...", "Chill Guy.", "You should check out the site though.", "Let him know how you feel about it :)" ]'>
 					    	<span class="wrap"></span>
 					  	</a>
 						</h1>
@@ -104,7 +104,7 @@
 					<div class="section-header">
 						<h2 class="section-heading animated" data-animation="bounceInUp">Who is Michael Olie</h2>
 						<p id="bio">I am a dedicated web developer who graduated from Loyola University with a major in Business Marketing in 2011. An unique individual with a real passion for creating all types of applications using new technologies and learning new techniques. I
-							enjoy what I do, and I also have a background in graphic design. I also enjoy basketball, anime, video games, football, collecting sneakers, along with skateboarding</p>
+							enjoy what I do, and I also have a background in graphic design. I also enjoy basketball, anime, video games, football, collecting sneakers, along with skateboarding.<br><span id="contact-text">Get in touch. Let's work.</span></p>
 					</div>
 				</div>
 			</div>
@@ -133,31 +133,44 @@
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="cform" id="contact-form">
 						<div id="errormessage"></div>
-						<form action="/send" method="POST" role="form" class="contactForm">
-							<h1>{{ msg }}</h1>
+						<form id="contactForm" action="/send" method="post" class="form-horizontal">
 							<div class="form-group">
-								<label for="name">Your Name</label>
-								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-								<div class="validation"></div>
+								<label for="name" class="col-md-3 control-label">Full Name</label>
+								<div class="col-md-6">
+									<input placeholder="Your name" type="text" class="form-control" id="name" name="name" />
+								</div>
 							</div>
 							<div class="form-group">
-								<label for="email">Your Email</label>
-								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-								<div class="validation"></div>
+								<label for="email" class="col-md-3 control-label">Email</label>
+								<div class="col-md-6">
+									<input type="email" id="email" class="form-control" name="email" placeholder="Your Email" />
+								</div>
 							</div>
 							<div class="form-group">
-								<label for="subject">Subject</label>
-								<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-								<div class="validation"></div>
+								<label class="col-md-3 control-label">Subject</label>
+								<div class="col-md-6">
+									<input type="text" class="form-control" name="subject" placeholder="Subject of E-Mail" />
+								</div>
 							</div>
 							<div class="form-group">
-								<label for="message">Message</label>
-								<textarea class="form-control" name="message" rows="5" data-rule="required" id="message" data-msg="Please write something for us"></textarea>
-								<div class="validation"></div>
+								<label class="col-md-3 control-label">Content</label>
+								<div class="col-md-6">
+									<textarea class="form-control" name="content" rows="5"></textarea>
+								</div>
 							</div>
-
-							<button id="submit" type="submit" class="btn btn-theme pull-left">SEND MESSAGE</button>
+							<!-- #messages is where the messages are placed inside -->
+							<div class="form-group">
+								<div class="col-md-9 col-md-offset-3">
+									<div id="messages"></div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-9 col-md-offset-3">
+									<button type="submit" class="btn btn-theme">Send</button>
+								</div>
+							</div>
 						</form>
+
 
 					</div>
 				</div>
@@ -173,8 +186,8 @@
 				<div class="col-sm-12 align-center">
 					<ul class="social-network social-circle">
 						<li><a href="www.facebook.com/michaelolie" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#" class="icoGitHub" title="GitHub"><i class="fa fa-github"></i></a></li>
+						<li><a href="https://plus.google.com/u/0/117699088262059822631" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="https://github.com/SwiftMike" class="icoGitHub" title="GitHub"><i class="fa fa-github"></i></a></li>
 					</ul>
 				</div>
 			</div>
