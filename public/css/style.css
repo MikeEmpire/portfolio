@@ -4,7 +4,7 @@
     Author: BootstrapMade
     Author URL: https://bootstrapmade.com
 */
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Space+Mono');
 /* === fontawesome === */
 @import url('font-awesome.css');
 /* ==== overwrite bootstrap standard ==== */
@@ -1266,4 +1266,187 @@ span#contact-text {
 
 i.form-control-feedback {
     top: 15px;
+}
+
+span.wrap {
+	font-family: 'Space Mono', sans-serif;
+	margin-top: 10%;
+}
+
+/*// Small screens*/
+@media only screen {
+  /* Define mobile styles */
+	html {
+		width: 130%;
+	}
+	h1.autotext {
+		margin-top: 10%;
+	}
+	p.work-info {
+		font-size: 2.7vw;
+    line-height: 14px;
+	}
+
+}
+
+@media only screen and (max-width: 40em) {
+		html {
+			width: 130%;
+	}
+	h1.autotext {
+		margin-top: 10%;
+    font-size: 7vw;
+    width: 130vw;
+	}
+
+	div#work {
+		width: 130vw;
+		height: 100%;
+	}
+
+	p.work-info {
+		font-size: 2.7vw;
+    line-height: 14px;
+	}
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/*// Medium screens*/
+@media only screen and (min-width: 40.063em) {
+	html {
+		width: 100%;
+	}
+	div#work {
+		background: black;
+	}
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	p.work-info {
+		line-height: 30px;
+	}
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/**/
+/*// Large screens*/
+@media only screen and (min-width: 64.063em) {
+	p.work-info {
+		line-height: 30px;
+	}
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+	p.work-info {
+		line-height: 40px;
+    font-size: 1.5vw;
+	}
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/*// XLarge screens*/
+@media only screen and (min-width: 90.063em) {
+	p.work-info {
+		line-height: 40px;
+    font-size: 1.5vw;
+	}
+} /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+	p.work-info {
+		line-height: 40px;
+    font-size: 1.5vw;
+	}
+} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/*// XXLarge screens*/
+@media only screen and (min-width: 120.063em) {
+	p.work-info {
+		line-height: 40px;
+    font-size: 1.5vw;
+	}
+} /* min-width 1921px, xxlarge screens */
+
+/*
+#1 = 8330ff
+#2 = 5c1eb9
+*/
+a {
+	color: #8330ff;
+}
+a:hover {
+	color: #5c1eb9;
+}
+
+/* menu */
+.nav>li>a:hover {
+	color: #5c1eb9;
+}
+
+.navbar .navbar-nav > .active > a {
+	color: #8330ff;
+}
+
+/* flexslider */
+.flex-control-paging li a {
+	background: #35A49C;
+}
+
+.flex-direction-nav a:hover{
+	background-color:#35A49C;
+}
+
+.testimonial span.author a {
+	color: #79CDC0;
+}
+
+/* --- icon box hover --- */
+.hi-icon-effect-5 .hi-icon {
+	color: #35A49C;
+	box-shadow: 0 0 0 4px #35A49C;
+}
+.no-touch .hi-icon-effect-5 .hi-icon:hover {
+	background: #35A49C;
+	box-shadow: 0 0 0 8px  #79CDC0;
+}
+
+
+/* portfolio */
+.portfolio-item .portfolio-desc {
+	background: #35A49C;
+}
+
+/* btn */
+.btn-theme {
+  background: #5c1eb9;
+}
+.btn-theme:hover,.btn-theme:focus,.btn-theme:active{
+  background: #8330ff;
+}
+.btn-cta,.btn-cta.btn-lg {
+  background: #5c1eb9;
+  border-color: #8330ff;
+}
+
+.btn-cta:focus,.btn-cta:active{
+   border-color: #5c1eb9;
+}
+
+/* contact */
+.validation {
+	color: red;
+}
+
+/* footer */
+.social-circle li a {
+	background:#5c1eb9;
+}
+
+a.scrollup{
+	background:#5c1eb9;
+}
+
+#sendmessage {
+    color: green;
+}
+
+#errormessage {
+    color: red;
 }
