@@ -1,6 +1,7 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
+import compression from 'compression';
 
 // Declare express
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.static(`${process.cwd()}/public`));
 // middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(compression());
 
 const handlebars = require('express-handlebars');
 
@@ -22,7 +24,7 @@ const data = {
 };
 
 app.set('port', (process.env.PORT || 3000));
-
+app.set('view cache', true);
 app.engine('handlebars', handlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
