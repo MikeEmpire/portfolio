@@ -10,12 +10,12 @@ const app = express();
 const PORT = 3000;
 
 // Serve static file
+app.use(compression());
 app.use(express.static(`${process.cwd()}/public`));
 
 // middleware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(compression());
 
 const handlebars = require('express-handlebars');
 
