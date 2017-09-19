@@ -9,6 +9,7 @@ const app = express();
 // Declare which port
 const PORT = 3000;
 
+// Serve static file
 app.use(express.static(`${process.cwd()}/public`));
 
 // middleware
