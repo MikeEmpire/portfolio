@@ -35,6 +35,7 @@ app.get('/', (req, res) => {
 
 app.post('/send', (req, res) => {
   /* eslint-disable no-console */
+  console.log(req.body);
   const output = `
     <p>You have a new contact request</p>
     <h3>Contact Details</h3>
@@ -44,7 +45,7 @@ app.post('/send', (req, res) => {
       <li>Subject: ${req.body.subject}</li>
     </ul>
     <h3>Message</h3>
-    <p>${req.body.message}</p>
+    <p>${req.body.content}</p>
    `;
 
   // create reusable transporter object using the default SMTP transport
@@ -54,7 +55,7 @@ app.post('/send', (req, res) => {
     secure: false, // true for 465, false for other ports
     auth: {
       user: 'aolie94@gmail.com', // generated ethereal user
-      pass: '94bballa', // generated ethereal password
+      pass: 'Encarta100', // generated ethereal password
     },
     tls: {
       rejectUnauthorized: false,
