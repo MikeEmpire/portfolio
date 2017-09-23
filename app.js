@@ -3,6 +3,8 @@ import nodemailer from 'nodemailer';
 import bodyParser from 'body-parser';
 import compression from 'compression';
 
+require('dotenv').config();
+
 // Declare express
 const app = express();
 
@@ -54,8 +56,8 @@ app.post('/send', (req, res) => {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: 'aolie94@gmail.com', // generated ethereal user
-      pass: 'Encarta100', // generated ethereal password
+      user: process.env.GMAIL_USER, // generated ethereal user
+      pass: process.env.GMAIL_PW, // generated ethereal password
     },
     tls: {
       rejectUnauthorized: false,
@@ -83,4 +85,6 @@ app.post('/send', (req, res) => {
   });
 });
 
-app.listen(process.env.PORT || PORT);
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`You are listening to port ${PORT}`);
+});
