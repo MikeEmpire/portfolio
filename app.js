@@ -5,6 +5,8 @@ import compression from 'compression';
 
 require('dotenv').config();
 
+require('sqreen');
+
 // Declare express
 const app = express();
 
