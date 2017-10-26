@@ -1,3 +1,4 @@
+/* eslint-disable */
 (function($) {
 
 	$(document).ready(function() {
@@ -5,7 +6,7 @@
 		setupClickToScroll();
 		setupPostAnimation();
 		setupScrollToTop();
-     enableScrollAbortion();
+    enableScrollAbortion();
 
 		// Trigger window.scroll, this will initiate some of the scripts
 		$(window).scroll();

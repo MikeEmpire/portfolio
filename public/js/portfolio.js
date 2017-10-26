@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 jQuery(document).ready(function($){
 	var isPreserve3DSupported = ( $('.preserve3d').length > 0 ),
 		isTransitionSupported = ( $('.csstransitions').length > 0 ),

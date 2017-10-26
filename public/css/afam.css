@@ -194,6 +194,12 @@ body {
 .post-wrapper .post.music-icon .stem-overlay .icon {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/music-icon.png);
 }
+.post-wrapper .post.grad-icon .stem-overlay .icon {
+  background-image: url(http://res.cloudinary.com/dymobf5qb/image/upload/v1509048414/grad-icon_xbush7.png);
+}
+.post-wrapper .post.graphic-design-icon .stem-overlay .icon {
+  background-image: url(http://res.cloudinary.com/dymobf5qb/image/upload/v1509048414/graphic-design-icon_m7w5s4.png);
+}
 .post-wrapper .post.bitbucket-icon .stem-overlay .icon {
   background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/22043/bitbucket-icon.png);
 }
@@ -243,6 +249,7 @@ body {
   transform: translateY(-5px);
 }
 .post-wrapper .post .post-content .post-title {
+	color: aliceblue;
   font-size: 32px;
   line-height: 42px;
   margin: 0px 0px 15px 0px;
@@ -340,8 +347,7 @@ Portfolio Navigation
 .cd-3d-portfolio-navigation h1 {
   font-size: 2rem;
   margin-bottom: .6em;
-  font-family: "Lora", serif;
-  font-weight: bold;
+  color: aliceblue;
 }
 .cd-3d-portfolio-navigation li {
   display: inline-block;
@@ -620,7 +626,7 @@ Portfolio Projects
 }
 .cd-3d-portfolio .projects .row > li.project-1 .project-image::before {
   /* set project background image */
-  background-image: url(../img/photo-1.jpg);
+  background-image: url(http://res.cloudinary.com/dymobf5qb/image/upload/v1509052994/Screen_Shot_2017-10-26_at_9.07.12_AM_f38pn3.png);
 }
 .cd-3d-portfolio .projects .row > li.project-2 .project-image::before {
   background-image: url(../img/photo-2.jpg);
@@ -663,10 +669,11 @@ Portfolio Projects
   transition: transform 0.6s cubic-bezier(0.5, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.5, 0, 0.1, 1);
 }
 .cd-3d-portfolio .projects h2 {
-  color: #edeade;
-  font-size: 2.2rem;
-  font-weight: bold;
-  font-family: "Lora", serif;
+  color: #22313F ;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  text-shadow: -0.02em 0 0 #F22613,  0.02em 0 0 #00FFFF;
 }
 .cd-3d-portfolio .projects .project-content {
   position: absolute;
@@ -690,7 +697,7 @@ Portfolio Projects
   max-width: 800px;
   margin: 2em auto;
   line-height: 1.6;
-  color: #694d59;
+  color: #112C30;
 }
 .cd-3d-portfolio .projects.project-has-transition .row > li {
   /* the project-has-transition class is used to add a transition to the tranform property of the single projects - it's added when a project is selected (before opening it) and removed when a project is colsed (when the closing animation is finished) */
@@ -915,4 +922,55 @@ Back to top
 .cd-top:hover {
   background-color: black;
   opacity: 1;
+}
+
+h2.section-heading.animated {letter-spacing: 6px;padding-top: 4%;text-transform: uppercase;color: white;position: relative;}
+
+#contact h3 {
+    color: aliceblue;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+label.col-md-3.control-label {
+    color: aliceblue;
+    font-family: 'Volkhov';
+    font-size: medium;
+}
+
+.section-header {
+    margin-bottom: 10%;
+}
+
+div .col-md-9 button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  font-size: inherit;
+  padding: 1em 2em;
+  color: var(--color);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+div .col-md-9 button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+code {
+  color: #e4cb58;
+  font: inherit;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+          transform: translateY(-0.25em);
+}
+
+.raise {
+  --color: #35C189;
+  --hover: #e5ff60;
 }

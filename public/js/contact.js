@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 $('#contactForm').bootstrapValidator({
 	container: '#messages',
 	feedbackIcons: {
