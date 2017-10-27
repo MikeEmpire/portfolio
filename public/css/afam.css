@@ -974,3 +974,15 @@ code {
   --color: #35C189;
   --hover: #e5ff60;
 }
+
+.cd-3d-portfolio .projects .project-content h4 {
+    width: 90%;
+    max-width: 800px;
+    margin: 2em auto;
+    line-height: 1.6;
+    font-size: 4rem;
+}
+
+small.help-block {
+    color: crimson;
+}
