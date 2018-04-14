@@ -1,15 +1,17 @@
 #preloader {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1000;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    z-index: 1203;
 }
 #preloader i {
 	color: white;
 	font-size: 100px;
 	margin: 0 auto;
+	margin-top: 20%;
 }
 .vertical-text {
     transform: rotate(90deg);
