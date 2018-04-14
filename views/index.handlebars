@@ -3,8 +3,8 @@
 	<div class="container">
 		<a class="navbar-brand js-scroll-trigger" href="#page-top">Michael Olie</a>
 		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 		<div class="collapse navbar-collapse" id="navbarResponsive">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
@@ -25,6 +25,10 @@
 </nav>
 
 <header class="masthead">
+	<div id="preloader">
+		<i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+		<span class="sr-only">Loading...</span>
+	</div>
 	<div class="header-content">
 		<div class="header-content-inner">
 			<h1 id="homeHeading" class="vertical-text">Welcome</h1>
@@ -35,283 +39,10 @@
 	</div>
 </header>
 
-<section class="bg-primary" id="about">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 mx-auto text-center">
-				<h2 class="section-heading text-white">Michael Olie</h2>
-				<hr class="light">
-				<p class="text-faded">I am a dedicated web developer who graduated from Loyola University with a major in Business Marketing in 2011. An unique individual with a real passion for creating all types of applications using new technologies and learning new techniques. I enjoy
-					what I do, and I also have a background in graphic design. I also enjoy basketball, anime, video games, football, collecting sneakers, along with skateboarding.</p>
-			</div>
-		</div>
-	</div>
-</section>
-<div class="stem-wrapper">
-	<div class="stem"></div>
-	<div class="stem-background"></div>
-</div>
+{{> about }}
 
-<div class="section main-content">
-	<div class="section-inner">
+{{> timeline }}
 
-		<div class="stem-padding"></div>
+{{> portfolio }}
 
-		<div class="post-wrapper">
-
-			<article class="post grad-icon">
-				<div class="stem-overlay">
-					<div class="icon"></div>
-					<div class="stem-mask"></div>
-				</div>
-
-				<div class="post-content">
-					<p class="meta">In 2011....</p>
-					<h2 class="post-title">Enrolled in Loyola University New Orleans</h2>
-					<div class="entry-content">
-						<p>Began my educational journey at Loyola University New Orleans studying business marketing.</p>
-					</div>
-				</div>
-			</article>
-
-			<article class="post graphic-design-icon" data-stem-color="green">
-				<div class="stem-overlay">
-					<div class="icon"></div>
-					<div class="stem-mask"></div>
-				</div>
-
-				<div class="post-content">
-					<p class="meta">In 2011...</p>
-					<h2 class="post-title">Started learning graphic design</h2>
-					<div class="entry-content">
-						<p>In my same year as entering college, I decided that I would begin teaching myself other skills other than what was taught in class. I was always interested in graphic design and I began the journey to learn all I can.</p>
-					</div>
-				</div>
-			</article>
-
-			<article class="post bitbucket-icon" data-stem-color="yellow">
-				<div class="stem-overlay">
-					<div class="icon"></div>
-					<div class="stem-mask"></div>
-				</div>
-
-				<div class="post-content">
-					<p class="meta">In 2014..</p>
-					<h2 class="post-title">Began my journey of web development</h2>
-					<div class="entry-content">
-						<p>In 2014, entering my junior year I had a good number of graphic design clients. One of my clients asked me if I can make websites, and I told the client that I can learn. From that moment on I began to learn how to code.</p>
-					</div>
-				</div>
-			</article>
-
-			<article class="post grad-icon" data-stem-color="white">
-				<div class="stem-overlay">
-					<div class="icon"></div>
-					<div class="stem-mask"></div>
-				</div>
-
-				<div class="post-content">
-					<p class="meta">In 2015</p>
-					<h2 class="post-title">Graduated from Loyola University New Orleans</h2>
-					<div class="entry-content">
-						<p>I graduated from Loyola University New Orleans with a degree in Business Marketing. From then on I began to take coding more serious because I was able to do more research and learn about all the possible applications that one can make with software.</p>
-					</div>
-				</div>
-			</article>
-
-			<article class="post bitbucket-icon">
-				<div class="stem-overlay">
-					<div class="icon"></div>
-					<div class="stem-mask"></div>
-				</div>
-
-				<div class="post-content">
-					<p class="meta">Jan. 2017 - Aug. 2017</p>
-					<h2 class="post-title">Attended UCLA Extension Fullstack Coding Bootcamp</h2>
-					<div class="entry-content">
-						<p>While learning coding on my own from various sources, I was able to stumble upon UCLA Extension and I signed up for the 6-month fullstack javascript course. I was able to take my coding aspirations to a higher level at this bootcamp and learn a
-							ton about front-end, back-end and various devOps concepts.</p>
-					</div>
-				</div>
-			</article>
-
-		</div>
-		<!-- post-wrapper -->
-
-		<a href="#about">
-			<div class="single-stem-icon scroll-to-top trigger-scroll-to-top"></div>
-		</a>
-
-	</div>
-	<!-- section-inner -->
-</div>
-<!-- main-content -->
-<section class="p-0" id="portfolio">
-	<div class="cd-3d-portfolio">
-		<nav class="cd-3d-portfolio-navigation">
-			<div class="cd-wrapper">
-				<h1>Recent Works</h1>
-				<p>Check out some of my latest projects</p>
-			</div>
-		</nav>
-		<!-- .cd-3d-portfolio-navigation -->
-
-		<div class="projects">
-			<ul class="row">
-				<li class="front-face selected project-1">
-					<div class="project-wrapper">
-						<div class="project-image">
-							<div class="project-title">
-								<h2>Machine.LA</h2>
-							</div>
-						</div>
-						<!-- .project-image -->
-
-						<div class="project-content">
-							<div>
-								<p>
-									Machine.LA is a new film company that was in need of a presence on the web. Using Node, Express, JQuery, and deployed with Git, me and a small team of developers were able to have success with this project. Click the link below to visit the site.
-								</p>
-								<a target="_blank" href="https://www.themachine.la/"><h4>Link</h4></a>
-							</div>
-						</div>
-						<!-- .project-content -->
-
-						<a href="#0" class="close-project">Close</a>
-					</div>
-					<!-- .project-wrapper -->
-				</li>
-			</ul>
-			<!-- .row -->
-
-			<ul class="row">
-				<li class="front-face selected project-4">
-					<div class="project-wrapper">
-						<div class="project-image">
-							<div class="project-title">
-								<h2>Southern Petroleum Resources</h2>
-							</div>
-						</div>
-						<!-- .project-image -->
-
-						<div class="project-content">
-							<div>
-								<p>
-									Founded in 2012, Southern Petroleum Resources (SPR), LLC is a bulk fuel wholesaler located in Atlanta, Georgia. This company was in need of a redesign of their website, and wanted to hire somebody with web knowledge. I was referred by one of the employees of (SPR) to recreate their website. Through mockups and live prototypes, we were able to come up with a solution. There are few more add-ons that will be added to the site but we were able to come up with a tenative solution.
-								</p>
-
-								<a target="_blank" href="https://southernpetroleumresources.herokuapp.com"><h4>Link</h4></a>
-							</div>
-						</div>
-						<!-- .project-content -->
-
-						<a href="#0" class="close-project">Close</a>
-					</div>
-					<!-- .project-wrapper -->
-				</li>
-			</ul>
-			<!-- .row -->
-
-			<ul class="row">
-				<li class="front-face selected project-7">
-					<div class="project-wrapper">
-						<div class="project-image">
-							<div class="project-title">
-								<h2>Hangman Game</h2>
-							</div>
-						</div>
-						<!-- .project-image -->
-
-						<div class="project-content">
-							<div>
-								<p>
-									During my tenure at UCLA Extension during 2017, I was assigned homework to create a hangman game for homework. This project I felt very comfortable completing because I had been practicing on freecodecamp and other sites that assist others in coding. Click the link below to check it out!
-								</p>
-
-								<a target="_blank" href="https://uclaxtensionhangman.herokuapp.com/"><h4>Link</h4></a>
-							</div>
-						</div>
-						<!-- .project-content -->
-
-						<a href="#0" class="close-project">Close</a>
-					</div>
-					<!-- .project-wrapper -->
-				</li>
-			</ul>
-			<!-- .row -->
-		</div>
-		<!-- .projects -->
-
-		<a href="#0" class="cd-top">Top</a>
-	</div>
-
-</section>
-
-<section id="contact" style="background: url(http://res.cloudinary.com/dymobf5qb/image/upload/v1509098123/high-quality-abstract-hebus-website-background_tsnodd_copy_bq3mpo.jpg)">
-	<div class="container">
-
-		<div class="row mar-bot40">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="section-header">
-					<h2 class="section-heading animated text-center" data-animation="bounceInUp">Get in Contact</h2>
-					<p class="text-center">I don't bite, just fill out this form and I will get back to you ASAP :)</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<h3>email:</h3>
-				<p>aolie94@gmail.com</p>
-				<h3>git:</h3>
-				<p>www.github.com/SwiftMike</p>
-				<a target="_blank" href="https://files.acrobat.com/a/preview/e1fdfaf5-c145-402e-bd72-4c1bf9a094ec"><h4>Click here to see my resume</h4></a>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				<div class="cform" id="contact-form">
-					<div id="errormessage"></div>
-					<form id="contactForm" action="/send" method="post" class="form-horizontal">
-						<div class="form-group">
-							<label for="name" class="col-md-3 control-label">Full Name</label>
-							<div class="col-md-6">
-								<input placeholder="Your name" type="text" class="form-control" id="name" name="name" />
-							</div>
-						</div>
-						<div class="form-group">
-							<label for="email" class="col-md-3 control-label">Email</label>
-							<div class="col-md-6">
-								<input type="email" id="email" class="form-control" name="email" placeholder="Your Email" />
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-md-3 control-label">Subject</label>
-							<div class="col-md-6">
-								<input type="text" class="form-control" name="subject" placeholder="Subject of E-Mail" />
-							</div>
-						</div>
-						<div class="form-group">
-							<label class="col-md-3 control-label">Content</label>
-							<div class="col-md-6">
-								<textarea class="form-control" name="content" rows="5"></textarea>
-							</div>
-						</div>
-						<!-- #messages is where the messages are placed inside -->
-						<div class="form-group">
-							<div class="col-md-9 col-md-offset-3">
-								<div id="messages"></div>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-md-9 col-md-offset-3">
-								<button type="submit" class="raise btn btn-theme">Send</button>
-							</div>
-						</div>
-					</form>
-
-
-				</div>
-			</div>
-			<!-- ./span12 -->
-		</div>
-
-	</div>
-</section>
+{{> contact }}
